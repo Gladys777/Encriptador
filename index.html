@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">  
+  <title>PRIMER CHALLENGER ORACLE</title>
+  <link rel="stylesheet" href="css/normalice.css">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;400;700&family=Montserrat:wght@100;400;800&family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;400;700&family=Montserrat:wght@100;400;800&family=Poppins:wght@100;400;800&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="titulo">CÓDIGO OCULTO</h1>
+  </header>
+
+  <main class="contenedor secciones">
+    <section class="form seccion1">
+      <form action="" class="formulario">
+        <div class="formulario_input">
+          <textarea class="text-input input1" type="text" name="input-texto" id="input-texto" placeholder="Ingresa el texto aqui" autofocus></textarea>
+        </div>
+        <div class="formulario_texto">
+          <label for="input-texto"> Sólo letras minúsculas, sin tilde, sin caracteres especiales</label>
+        </div>
+        <div class="formulario_botones">
+          <input class="btn btn-encriptar" type="submit" value="Encriptar" id="btn-encriptar">
+          <input class="btn btn-desencriptar" type="submit" value="Desencriptar" id="btn-desencriptar">
+          <input class="btn btn-limpiar" type="submit" value="Limpiar" id="btn-limpiarEntrada">
+        </div>
+      </form>
+    </section>
+  
+    <section class="msg box seccion2 formulario2">
+      <div class="formulario2_input">
+        <textarea class="text-input input2" type="text" id="msg" ></textarea>
+      </div>
+      <div class="formulario2_botones">
+        <button class="btn btn-copiar" id="btn-copy">         
+          Copiar 
+        </button> 
+        <input class="btn btn-limpiar" type="submit" value="Limpiar" id="btn-limpiarSalida">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__texto">Este reto fue realizado por @GladysNader</p>
+  </footer>
+
+  <script src="funtions.js"></script>
+</body>
+</html>
