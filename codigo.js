@@ -8,19 +8,19 @@ function encriptarTexto(texto){
         cadenaTexto.push(texto.charAt(indiceTexto));
     }
     
-    var largoArray = cadenaTexto.length;
+    var mensajeOriginal = cadenaTexto.length;
     
-    for(var indiceArray = 0; indiceArray < largoArray; indiceArray++){
-        if(cadenaTexto[indiceArray] == 'e'){
-            cadenaTexto.splice(indiceArray, 1, 'enter');
-        }else if(cadenaTexto[indiceArray] == 'i'){
-            cadenaTexto.splice(indiceArray, 1, 'imes');
-        }else if(cadenaTexto[indiceArray] == 'a'){
-            cadenaTexto.splice(indiceArray, 1, 'ai');
-        }else if(cadenaTexto[indiceArray] == 'o'){
-            cadenaTexto.splice(indiceArray, 1, 'ober');
-        }else if(cadenaTexto[indiceArray] == 'u'){
-            cadenaTexto.splice(indiceArray, 1, 'ufat');
+    for(var i = 0; i < mensajeOriginal; i++){
+        if(cadenaTexto[i] == 'e'){
+            cadenaTexto.splice(i, 1, 'enter');
+        }else if(cadenaTexto[i] == 'i'){
+            cadenaTexto.splice(i, 1, 'imes');
+        }else if(cadenaTexto[i] == 'a'){
+            cadenaTexto.splice(i, 1, 'ai');
+        }else if(cadenaTexto[i] == 'o'){
+            cadenaTexto.splice(i, 1, 'ober');
+        }else if(cadenaTexto[i] == 'u'){
+            cadenaTexto.splice(i, 1, 'ufat');
         }
     }
 
@@ -59,8 +59,8 @@ botonDesencriptar.addEventListener("click",function(event){
 });
 
 function copy() {
-    var copyText = document.querySelector("#msg");
-    copyText.select();
+    var copiarTexto = document.querySelector("#msg");
+    copiarTexto.select();
     document.execCommand("copy");
 }  
 document.querySelector("#btn-copy").addEventListener("click", copy);

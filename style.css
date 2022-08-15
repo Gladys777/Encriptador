@@ -1,6 +1,3 @@
-/* Intente realizar el responsive para los diferentes dispositivos, pero aun no
-se me da muy bien, asi que por ahora lo dejare como pendiente */
-
 :root{
   --primario: #0A3871;
   --secundario: #D8DFE8;
@@ -13,9 +10,6 @@ se me da muy bien, asi que por ahora lo dejare como pendiente */
   --fuentePrincipal: 'Poppins', sans-serif;
 }
 
-/*
-============================ CONFIGURAR ENTORNO ==============================
-*/
 html {
   box-sizing: border-box;
   font-size: 62.5%; 
@@ -23,9 +17,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-/*
-================================ GLOBALES ====================================
-*/
+
 body {
   background-color: var(--fondo);
   font-family: var(var(--fuentePrincipal));
@@ -39,9 +31,7 @@ body {
   display: flex;
   justify-content: center;
 }
-/*
-================================= HEADER =========================================
-*/
+
 .header{
   margin: 2rem 0;
 }
@@ -52,9 +42,6 @@ h1{
   font-size: 4rem;
 }
 
-/*
-================================= BOX =========================================
-*/
 .box {
   padding: 1rem;
   margin: 0 1rem 0 4rem;
@@ -64,10 +51,6 @@ h1{
   height: auto;
   background-color: var(--fondo);
 }
-
-/*
-================================= FORMULARIO =========================================
-*/
 
 .formulario{
   display: grid;
@@ -93,12 +76,6 @@ h1{
   display: flex;
   justify-content:space-evenly;
 }
-
-
-
-/*
-================================= BOTONES =========================================
-*/
 
 .btn {
   border: 0;
@@ -137,10 +114,6 @@ h1{
   border: 0.5px solid var(--primario);
 }
 
-/*
-================================= INPUTS =========================================
-*/
-
 .text-input {
   border-radius: 0.5em;
   border: none;
@@ -165,10 +138,6 @@ h1{
   margin-bottom: 3rem;
   font-family: var(--fuenteSecundaria);
 }
-
-/*
-================================= FOOTER =========================================
-*/
 
 .footer{
   background-color: var(--secundario);
